@@ -1,0 +1,28 @@
+.profileHeader {
+    border-bottom: 0.5px solid rgb(231, 228, 228);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .profile_img_container{
+        border: 0.5px solid rgb(231, 228, 228);
+        img{
+            width: 100px;
+        }
+    }
+    .profile_info_container{
+        margin-left: 10px;
+        font-weight: bold;
+        color: #1C75B7;
+        h5{
+            color: gray;
+        }
+    }
+}
+.profile_form{
+    display: flex;
+    justify-content: center;
+    padding: 30px 0;
+    form{
+        width: 30%;
+    }
+}

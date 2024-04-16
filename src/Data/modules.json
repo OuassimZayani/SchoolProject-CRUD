@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "name": "Introduction to Computer Science",
+    "instructor": "Professor Smith",
+    "description": "This module covers the basics of computer science."
+  },
+  {
+    "id": 2,
+    "name": "Advanced Frontend Web Development",
+    "instructor": "Professor Johnson",
+    "description": "This module dives deeper into Frontend web development concepts."
+  },
+  {
+    "id": 3,
+    "name": "User Experience (UX) Design",
+    "instructor": "Professor Lee",
+    "description": "This module focuses on principles and practices of User Experience (UX) design, covering topics such as usability, user research, wireframing, prototyping, and user testing."
+  }
+]

@@ -1,0 +1,24 @@
+[
+      {
+        "id": 1,
+        "userId": 1,
+        "moduleName": "Introduction to Computer Science",
+        "examName": "Final Exam",
+        "grade": "16"
+      },
+      {
+        "id": 2,
+        "userId": 1,
+        "moduleName": "Advanced Frontend Web Development",
+        "examName": "FrontEnd Project",
+        "grade": "18"
+      },
+      {
+        "id": 3,
+        "userId": 1,
+        "moduleName": "User Experience (UX) Design",
+        "examName": "UX Design Project",
+        "grade": "19"
+      }
+]
+  

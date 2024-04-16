@@ -1,0 +1,31 @@
+[
+      {
+        "id": 1,
+        "name": "Final Exam",
+        "moduleName": "Introduction to Computer Science",
+        "date": "2024-05-20",
+        "description": "Final exam for Introduction to Computer Science"
+      },
+      {
+        "id": 2,
+        "name": "FrontEnd Project",
+        "moduleName": "Advanced Frontend Web Development",
+        "date": "2024-06-10",
+        "description": "Developing a web application. This project will involve implementing modern web development technologies and best practices to create an intuitive and user-friendly interface."
+      },
+      {
+        "id": 3,
+        "name": "UX Design Project",
+        "moduleName": "User Experience (UX) Design",
+        "date": "2024-05-05",
+        "description": "A hands-on Project focused on user experience (UX) design principles and techniques. Participants will learn about usability testing, wireframing, and prototyping to create intuitive and user-friendly interfaces."
+      },
+      {
+        "id": 4,
+        "name": "Data Structures and Algorithms",
+        "moduleName": "Introduction to Computer Science",
+        "date": "2024-05-07",
+        "description": "This exam covers fundamental data structures and algorithms essential for computer science and software engineering. Topics include arrays, linked lists, stacks, queues, trees, sorting algorithms, and searching algorithms. Students will gain a deep understanding of data organization and algorithmic problem-solving techniques."
+      }
+]
+  

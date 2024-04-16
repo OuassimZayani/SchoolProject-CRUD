@@ -1,0 +1,17 @@
+[
+      {
+        "id": 1,
+        "name": "Hackathon",
+        "date": "2024-04-15",
+        "location": "Virtual",
+        "description": "Hackathon for Introduction to Computer Science"
+      },
+      {
+        "id": 2,
+        "name": "Faculty Meeting",
+        "date": "2024-04-18",
+        "location": "Room 102",
+        "description": "Monthly faculty meeting"
+      }
+]
+  
