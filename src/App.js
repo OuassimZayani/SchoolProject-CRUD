@@ -10,7 +10,7 @@ import Exams from "./pages/exams/Exams";
 import Results from "./pages/results/Results";
 import Absences from "./pages/absences/Absences";
 import Events from "./pages/events/Events";
-
+import Calendar from "./components/Calendar/Calendar";
 
 import {
   BrowserRouter,
@@ -48,8 +48,9 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/">
-          <Route index element={<Login/>} />
-          <Route path="signup" element={<Signup/>} />
+          <Route index element={<Login />} />
+          <Route path="signup" element={<Signup />} />
+          <Route path="/calendar" element={<Calendar />} />
           <Route path="/dashboard" element={user ? <Dashboard /> : <Navigate to="/" replace />} />
           <Route path="/profile" element={user ? <Profile /> : <Navigate to="/" replace />} />
           <Route path="/modules" element={user ? <Modules /> : <Navigate to="/" replace />} />

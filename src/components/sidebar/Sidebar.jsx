@@ -4,14 +4,14 @@ import InsertChartIcon from "@mui/icons-material/InsertChart";
 import ExitToAppIcon from "@mui/icons-material/ExitToApp";
 import NotificationsNoneIcon from "@mui/icons-material/NotificationsNone";
 import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined";
-import QuizIcon from '@mui/icons-material/Quiz';
-import SchoolIcon from '@mui/icons-material/School';
-import AccessTimeIcon from '@mui/icons-material/AccessTime';
-import CancelIcon from '@mui/icons-material/Cancel';
+import QuizIcon from "@mui/icons-material/Quiz";
+import SchoolIcon from "@mui/icons-material/School";
+import AccessTimeIcon from "@mui/icons-material/AccessTime";
+import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
+import CancelIcon from "@mui/icons-material/Cancel";
 import { Link } from "react-router-dom";
-import { useNavigate } from 'react-router-dom';
-import { useAuth } from '../../AuthContext'; // Import the useAuth hook
-
+import { useNavigate } from "react-router-dom";
+import { useAuth } from "../../AuthContext"; // Import the useAuth hook
 
 const Sidebar = () => {
   const navigate = useNavigate();
@@ -34,10 +34,10 @@ const Sidebar = () => {
         <ul>
           <p className="title">MAIN</p>
           <Link to="/dashboard" style={{ textDecoration: "none" }}>
-          <li>
-            <DashboardIcon className="icon" />
-            <span>Dashboard</span>
-          </li>
+            <li>
+              <DashboardIcon className="icon" />
+              <span>Dashboard</span>
+            </li>
           </Link>
           <p className="title">PAGES</p>
           <Link to="/modules" style={{ textDecoration: "none" }}>
@@ -54,33 +54,39 @@ const Sidebar = () => {
           </Link>
           <Link to="/exams" style={{ textDecoration: "none" }}>
             <li>
-                <QuizIcon className="icon" />
-                <span>Exams</span>
+              <QuizIcon className="icon" />
+              <span>Exams</span>
             </li>
           </Link>
           <Link to="/results" style={{ textDecoration: "none" }}>
             <li>
-                <InsertChartIcon className="icon" />
-                <span>Results</span>
+              <InsertChartIcon className="icon" />
+              <span>Results</span>
             </li>
           </Link>
           <Link to="/absences" style={{ textDecoration: "none" }}>
             <li>
-                <CancelIcon className="icon" />
-                <span>Absence tallies</span>
+              <CancelIcon className="icon" />
+              <span>Absence tallies</span>
             </li>
           </Link>
           <Link to="/events" style={{ textDecoration: "none" }}>
             <li>
-                <NotificationsNoneIcon className="icon" />
-                <span>Events</span>
+              <NotificationsNoneIcon className="icon" />
+              <span>Events</span>
+            </li>
+          </Link>
+          <Link to="/calendar" style={{ textDecoration: "none" }}>
+            <li>
+              <CalendarMonthIcon className="icon" />
+              <span>Calendar</span>
             </li>
           </Link>
           <p className="title">USER</p>
           <Link to="/profile" style={{ textDecoration: "none" }}>
             <li>
-                <AccountCircleOutlinedIcon className="icon" />
-                <span>Profile</span>
+              <AccountCircleOutlinedIcon className="icon" />
+              <span>Profile</span>
             </li>
           </Link>
           <li onClick={handleLogout}>
