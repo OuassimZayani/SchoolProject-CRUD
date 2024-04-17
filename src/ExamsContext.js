@@ -41,21 +41,11 @@ export const ExamsProvider = ({ children }) => {
 
   // Function to add a new exam
   const addExam = (newExam) => {
-    try {
-      // Generate a unique ID for the new exam
-      const id = generateNewId();
-      // Create a copy of the existing exams array and append the new exam
-      const updatedExams = [...exams, { id, ...newExam }];
-      // Update the state with the new exams array
-      setExams(updatedExams);
-      // Update the last used ID to the generated ID for the new exam
-      setLastUsedId(id);
-      // Optionally, you can also update the JSON file here
-      // For simplicity, I'll omit the file update in this example
-    } catch (error) {
-      console.error(error);
-    }
+    const newId = exams.length + 1; // Generate a new unique ID
+    setExams([...exams, { ...newExam, id: newId }]);
   };
+
+
 
   // Function to update an exam by ID
   const updateExam = (id, updatedExam) => {

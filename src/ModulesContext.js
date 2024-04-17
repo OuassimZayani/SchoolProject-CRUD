@@ -30,18 +30,8 @@ export const ModulesProvider = ({ children }) => {
 
   // Function to add a new module
   const addModule = (newModule) => {
-    try {
-      // Generate a unique ID for the new module
-      const id = modules.length + 1;
-      // Create a copy of the existing modules array and append the new module
-      const updatedModules = [...modules, { id, ...newModule }];
-      // Update the state with the new modules array
-      setModules(updatedModules);
-      // Optionally, you can also update the JSON file here
-      // For simplicity, I'll omit the file update in this example
-    } catch (error) {
-      console.error(error);
-    }
+    const newId = modules.length + 1; // Generate a new unique ID
+    setModules([...modules, { ...newModule, id: newId }]);
   };
 
   // Function to update a module by ID

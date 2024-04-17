@@ -50,7 +50,7 @@ function App() {
         <Route path="/">
           <Route index element={<Login />} />
           <Route path="signup" element={<Signup />} />
-          <Route path="/calendar" element={<Calendar />} />
+          <Route path="/calendar" element={user ? <Calendar /> : <Navigate to="/" replace />} />
           <Route path="/dashboard" element={user ? <Dashboard /> : <Navigate to="/" replace />} />
           <Route path="/profile" element={user ? <Profile /> : <Navigate to="/" replace />} />
           <Route path="/modules" element={user ? <Modules /> : <Navigate to="/" replace />} />
